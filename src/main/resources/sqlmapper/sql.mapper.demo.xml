@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mapper namespace="sql.mapper.demo">
+
+	<sql id="queryForPageList">
+	<![CDATA[
+		  SELECT
+			    id         AS id,
+			    username   AS username,
+			    realname   AS realname,
+			    tel        AS tel,
+			    email      AS email,
+			    creat_time AS creatTime,
+			    url        AS url,
+			    code       AS code,
+			    qq         AS qq,
+			    qq2        AS qq2,
+			    notice     AS notice,
+			    keyword    AS keyword
+			FROM
+			    t_base_info 
+			 where 1=1
+		     <#if realname?has_content>
+		      and realname like :realname 
+		     </#if>
+		     <#if username?has_content>
+		      and username like :username 
+		     </#if>
+		     <#if email?has_content>
+		      and email like :email 
+		     </#if>
+		      <#if tel?has_content>
+		      and tel like :tel 
+		     </#if>
+		     order by id
+		   
+	]]>
+	</sql>
+	<sql id="queryRealnameList">
+	    <![CDATA[
+		        SELECT          
+	                    distinct
+			    realname   AS `id`,
+			    realname   AS text
+			FROM
+			    t_base_info 
+		     order by id
+		   
+	 ]]>
+	</sql>
+	
+	<sql id="delete">
+	    <![CDATA[
+		        delete from t_base_info where id =? 
+		   
+	    ]]>
+	</sql>
+	
+	
+</mapper>
+

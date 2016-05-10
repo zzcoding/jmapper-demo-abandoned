@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<entity table="t_base_info" name="com.common.entity.TBaseInfo">
+    <property name="id" key="true" column="id" autoincre="false"/>
+    <property name="username" key="false" column="username" autoincre="false"/>
+    <property name="realname" key="false" column="realname" autoincre="false"/>
+    <property name="tel" key="false" column="tel" autoincre="false"/>
+    <property name="email" key="false" column="email" autoincre="false"/>
+    <property name="creatTime" key="false" column="creat_time" autoincre="false"/>
+    <property name="url" key="false" column="url" autoincre="false"/>
+    <property name="code" key="false" column="code" autoincre="false"/>
+    <property name="qq" key="false" column="qq" autoincre="false"/>
+    <property name="qq2" key="false" column="qq2" autoincre="false"/>
+    <property name="notice" key="false" column="notice" autoincre="false"/>
+    <property name="keyword" key="false" column="keyword" autoincre="false"/>
+</entity>

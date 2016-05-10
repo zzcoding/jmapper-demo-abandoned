@@ -1,0 +1,117 @@
+.toolbar{
+	background: url("../images/bg3.gif");
+	height: 26px;
+	border-left: 1px solid #ccc;
+	border-top: 1px solid #e4e4e4;
+	border-right: 1px solid #ccc;
+}
+.mmPaginator {
+   
+    white-space: nowrap;
+    height: 26px;
+
+}
+
+.mmPaginator .totalCountLabel{
+
+}
+.mmPaginator .totalCountLabel span{
+
+}
+
+.mmPaginator .pageList{
+
+}
+
+.mmPaginator .pageList li{
+
+
+}
+
+.mmPaginator .pageList li.active{
+
+}
+
+.mmPaginator .pageList li.disable a{
+ 
+}
+
+.mmPaginator .pageList li.disable{
+    background: #efefef;
+}
+
+.mmPaginator .pageList li.disable a{
+    color: #333;
+    cursor: default;
+}
+
+.mmPaginator .pageList li a{
+
+}
+
+.mmPaginator .pageList li a.head{
+
+}
+
+.mmPaginator .pageList li a.headDisable{
+
+}
+
+.mmPaginator .pageList li a.prev{
+
+}
+
+.mmPaginator .pageList li a.prevDisable{
+
+}
+
+.mmPaginator .pageList li a.next{
+
+}
+
+.mmPaginator .pageList li a.nextDisable{
+
+}
+
+.mmPaginator .pageList li a.tail{
+
+}
+
+.mmPaginator .pageList li a.tailDisable{
+
+}
+
+.mmPaginator .pageList li a.current{
+
+}
+
+.mmPaginator .pageList li a.skip{
+
+}
+
+.mmPaginator .limit{
+    display: inline-block;
+    *display: inline;
+    *zoom: 1;
+
+}
+
+.mmPaginator .limit select{
+    border: 1px solid #ccc;
+    padding: 1px;
+    width: auto;
+    height: auto;
+    margin: 0;
+    line-height: 1.5;
+    font-size: 1em;
+}
+
+
+
+
+
+
+
+
+
+
