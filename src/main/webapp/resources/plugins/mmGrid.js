@@ -1014,9 +1014,10 @@
             var $headWrapper = this.$headWrapper;
             var $bodyWrapper = this.$bodyWrapper;
             //修正窗口改变后table宽度不计算
-            this.$head.css("width",this.$headWrapper.width()+"px");
-            this.$bodyWrapper.css("width",this.$headWrapper.width()+"px");
-            this.$bodyWrapper.find('.mmg-body').css("width",this.$headWrapper.width()+"px");
+            var width = this.$headWrapper.width();
+            this.$head.css("width",width+"px");
+            this.$bodyWrapper.css("width",width+"px");
+            this.$bodyWrapper.find('.mmg-body').css("width",width+"px");
             // fix in ie6
             if(browser.isIE6 && (!opts.width || opts.width === 'auto')){
                 $mmGrid.width('100%');
