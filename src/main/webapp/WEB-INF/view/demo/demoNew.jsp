@@ -69,18 +69,17 @@ font-size: 12px;
        <form action="" id="fm">
        <table border="0" cellpadding="0" cellspacing="1">
          <tr>
-           <td width="11%"><div id="inputname">用户真实姓名：</div></td>
-           <td width="30%"><div id="inputvalue">
+           <td width="10%"><div id="inputname">用户真实姓名：</div></td>
+           <td width="15%"><div id="inputvalue">
                <select id="realname" name="realname" style="width: 129px">
                 
                </select>
            </div></td>
-           <td width="12%"><div id="inputname">用户名：</div></td>
-           <td width="20%">
+           <td width="10%"><div id="inputname">用户名：</div></td>
+           <td width="15%">
            <div id="inputvalue"><input name="username" type="text" size="30" /></div>    
-</td>
+          </td>
           
-       
          </tr>
       <tr>
         <td><div id="inputname">电子邮箱：</div></td>
