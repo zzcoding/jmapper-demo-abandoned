@@ -27,6 +27,7 @@ public class DemoServiceImpl extends ServiceSupport implements DemoService {
 	public List<Map<String, Object>> queryPageList(Map<String, Object> parameterMap, PageModel pageModel) {
 		parameterMap.put("tel", parameterMap.get("tel") == null ? null : "%" + parameterMap.get("tel") + "%");
 		parameterMap.put("email", parameterMap.get("email") == null ? null : "%" + parameterMap.get("email") + "%");
+		parameterMap.put("url", parameterMap.get("url") == null ? null : "%" + parameterMap.get("url") + "%");
 		parameterMap.put("username", parameterMap.get("username") == null ? null : "%" + parameterMap.get("username") + "%");
 		parameterMap.put("realname", parameterMap.get("realname") == null ? null : "%" + parameterMap.get("realname") + "%");
 		return queryForPageListMapNamedParameterByMapper("sql.mapper.demo.queryForPageList", pageModel, parameterMap);

@@ -25,6 +25,9 @@
 		     <#if username?has_content>
 		      and username like :username 
 		     </#if>
+		      <#if url?has_content>
+		      and url like :url 
+		     </#if>
 		     <#if email?has_content>
 		      and email like :email 
 		     </#if>
