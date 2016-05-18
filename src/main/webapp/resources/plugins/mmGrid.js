@@ -57,7 +57,67 @@
     }();
 
     MMGrid.prototype = {
+    		 //重新初始化
+    	reInit :function(){
 
+            this._id = (((1 + Math.random()) * 0x10000) | 0).toString(16);
+            this._loadCount = 0;
+           // this.opts = options;
+            var options=this.opts;
+           // this._initLayout(this.$mmGrid);
+            if(options.checkCol){
+
+                for(var i=0;i<options.cols.length;i++){
+                	if(options.cols[i].checkCol){
+                		options.cols.splice(0, 1);  
+                	}
+                }
+                var chkHtml = options.multiSelect ?  '<input type="checkbox" class="checkAll" >'
+                    : '<input type="checkbox" disabled="disabled" class="checkAll">';
+                options.cols.unshift({title:chkHtml,width: 20, align: 'center' ,lockWidth: true, checkCol: true, renderer:function(){
+                    return '<input type="checkbox" class="mmg-check">';
+                }});
+            }
+            this._initHead();
+          
+          
+            this._initOptions();
+          
+            this._initEvents();
+            this._setColsWidth();
+      
+            if(this.opts.fullWidthRows){
+                this._fullWidthRows();
+            }
+
+            //初始化插件
+            for(var i=0; i< this.opts.plugins.length; i++){
+                var plugin = this.opts.plugins[i];
+                plugin.reInit(this);
+            }
+
+            if(options.autoLoad){
+                var that = this;
+                this.opts = options;
+                setTimeout(function(){
+
+                    if(options.url){
+                        that.load();
+                    }else{
+                        that.load(options.items);
+                    }
+                },0); //chrome style problem
+            }
+            this._removeAllRow();
+         
+        
+        },
+        //删除所有行
+         _removeAllRow: function(){
+            var $body = this.$body;
+            $body.find('tr').remove();
+        },
+        
         _initLayout: function($el){
             var opts = this.opts;
             var $elParent = $el.parent();
