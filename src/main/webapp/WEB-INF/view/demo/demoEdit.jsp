@@ -116,7 +116,6 @@ font-size: 12px;
             </tbody></table>
             </form>
             </div>
-<script type="text/javascript" src="resources/plugins/main.js"></script>
 <script type="text/javascript">
 
 
