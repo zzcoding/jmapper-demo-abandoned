@@ -1404,7 +1404,7 @@ artDialog.fn = artDialog.prototype = {
 		lockMask.bind('click', function () {
 			that._reset();
 		}).bind('dblclick', function () {
-			that._click(that.config.cancelVal);
+			//that._click(that.config.cancelVal);
 		});
 		
 		if (config.duration === 0) {
