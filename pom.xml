@@ -37,7 +37,7 @@
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<springversion>3.1.1.RELEASE</springversion>
 		<hibernateversion>3.3.2.GA</hibernateversion>
-		<junitversion>4.9</junitversion>
+		<junitversion>4.13.1</junitversion>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 		<profiles.dir>src/profiles</profiles.dir>
 	</properties>
