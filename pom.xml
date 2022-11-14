@@ -35,7 +35,7 @@
 	</build>
 	<properties>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-		<springversion>3.1.1.RELEASE</springversion>
+		<springversion>3.2.18.RELEASE</springversion>
 		<hibernateversion>3.3.2.GA</hibernateversion>
 		<junitversion>4.9</junitversion>
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
